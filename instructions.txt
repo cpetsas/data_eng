@@ -1,0 +1,3 @@
+on one terminal run 'redis-server'
+on another run make_workers.sh
+on another terminal activate venv and run rq-worker
