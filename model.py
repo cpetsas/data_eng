@@ -67,6 +67,8 @@ class NetworkCreator:
         df = df.loc[df['taskrsrc_id'] > 30]
         x = df.task_id.astype(str)
         y = df['taskrsrc_id']
+        fig = plt.figure()
+        fig.suptitle('Number of employees on each task', fontsize=20)
         plt.bar(x,y)
         plt.xticks(rotation = 60)
         self.handle_graph(representation='figure')
